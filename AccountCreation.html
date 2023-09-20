@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>INB</title>
+        <link rel="stylesheet" href="AccountCreation.css">
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <div id="body_header">
+
+                <br>
+                <h1>Account Creation Form</h1>
+
+            </div>
+            <form method="post">
+                <fieldset>
+                    <legend><span class="number">1</span>Your basic details</legend>
+                    <label for="name">Name: *</label>
+                    <input type="text" name="user_name" placeholder="Name" required>
+
+                    <label for="mail">Email: *</label>
+                    <input type="email" name="user_email" placeholder="abc@xyz.com" required>
+
+                    <label for="tel">Contact Number: *</label>
+                    <input type="tel" placeholder="Include country code" name="user_num">
+
+                    <label for="date">Date of Birth: *</label>
+                    <input type="date" name="date" value="" required />
+
+                    <label for="skype_name">Address: *</label>
+                    <input type="text" name="address" placeholder="Address" pattern="[a-zA-Z0-9]+">
+                </fieldset>
+
+                <fieldset>
+                    <legend><span class="number">2</span>Account Details</legend>
+                    <label for="appointment_for">Account Type *</label>
+                    <select id="appointment_for" name="appointment_for" required>
+                        <option value="savings">Savings Account</option>
+                        <option value="current">Current Account</option>
+                    </select>
+                    
+                    <label for="tel">Account Number: *</label>
+                    <input type="tel" name="user_num">
+
+                    <label for="name">IFSC Code: *</label>
+                    <input type="text" name="user_name" required>
+
+                </fieldset>
+                <button class="btn btn-success">Create Account</button>
+            </form><br>
+        </div>
+        <br><br>
+    </body>
+
+</html>
